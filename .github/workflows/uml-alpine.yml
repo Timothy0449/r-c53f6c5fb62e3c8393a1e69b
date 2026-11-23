@@ -234,4 +234,4 @@ jobs:
           grep -q 'cmd exit code: 0' uml.log || { echo '::error::custom command finished with a non-zero status'; exit 1; }
           grep -q 'Power down' uml.log || { echo '::error::guest did not power down cleanly'; exit 1; }
           echo "::notice::done: Alpine $AVER on UML $KVER via veth+NAT (${MEM}M RAM, ncpus=${NCPU}, img root)"
-# sync-nonce: bd9a35c5a55b2d49
+# sync-nonce: 2399f217a4bf23b3
